@@ -1,0 +1,40 @@
+name: Build & deploy Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show repository files (debug)
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          echo "Docs folder listing:"
+          ls -la docs || echo "docs folder not found"
+
+      # If you have a static site generator, run build here and produce ./docs or ./_site as appropriate
+      # - name: Build site
+      #   run: npm ci && npm run build
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs    # <-- point this to the folder that actually contains index.html
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+

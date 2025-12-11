@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Leaderboard</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* minimal, self-contained style - you can move to styles.css */
+  :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa4b2}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071024, #081129);color:#e6eef6;padding:24px}
+  .container{max-width:980px;margin:0 auto}
+  h1{font-weight:600;margin-bottom:8px}
+  .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,.6)}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:12px 10px;text-align:left}
+  th{color:var(--muted);font-size:13px;letter-spacing:.02em}
+  tr{transition:transform .18s ease, background .18s ease}
+  tr:hover{transform:translateY(-4px); background:rgba(255,255,255,.02)}
+  .rank{width:64px;font-weight:600}
+  .score{font-weight:700;text-align:right}
+  .empty{padding:48px;text-align:center;color:var(--muted)}
+  .loader{display:inline-block;margin-left:8px;border:3px solid rgba(255,255,255,.08);border-top:3px solid var(--accent);border-radius:50%;width:14px;height:14px;animation:spin 0.9s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .fade-in{animation:fadeIn .35s ease both}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Contest leaderboard</h1>
+  <div class="card">
+    <div id="meta" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+      <div id="last-updated" style="color:var(--muted)">Loading leaderboard<span class="loader"></span></div>
+      <div style="font-size:13px;color:var(--muted)">Data source: leaderboard.json</div>
+    </div>
+
+    <div id="content" class="fade-in">
+      <!-- Table goes in here -->
+    </div>
+  </div>
+</div>
+
+<script>
+(async function(){
+  const content = document.getElementById('content');
+  const lastUpdated = document.getElementById('last-updated');
+
+  async function load() {
+    try {
+      const res = await fetch('./data/leaderboard.json', {cache: "no-store"});
+      if (!res.ok) {
+        content.innerHTML = `<div class="empty">No leaderboard available (HTTP ${res.status}).</div>`;
+        lastUpdated.textContent = `No data`;
+        return;
+      }
+      const payload = await res.json();
+      const rows = (payload && payload.data) ? payload.data : [];
+
+      lastUpdated.textContent = payload && payload.fetchedAt ? `Last updated: ${new Date(payload.fetchedAt).toLocaleString()}` : 'No timestamp';
+
+      if (!rows.length) {
+        content.innerHTML = `<div class="empty">Leaderboard is empty — try again in a few minutes.</div>`;
+        return;
+      }
+
+      // build table
+      const table = document.createElement('table');
+      table.innerHTML = `
+        <thead>
+          <tr><th class="rank">#</th><th>Username</th><th class="score">Score</th></tr>
+        </thead>
+        <tbody></tbody>
+      `;
+      const tbody = table.querySelector('tbody');
+
+      rows.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="rank">${escapeHtml(r.rank || '')}</td>
+          <td>${escapeHtml(r.username || '—')}</td>
+          <td class="score">${escapeHtml(r.score || '—')}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      content.innerHTML = '';
+      content.appendChild(table);
+
+    } catch (err) {
+      content.innerHTML = `<div class="empty">Unable to load leaderboard: ${escapeHtml(err && err.message || 'error')}</div>`;
+      lastUpdated.textContent = `No data`;
+    }
+  }
+
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c])); }
+
+  await load();
+  setInterval(load, 5*60*1000);
+})();
+</script>
+</body>
+</html>
+
