@@ -1,25 +1,25 @@
 {
-  "fetchedAt": "2025-12-12T10:50:31.309Z",
+  "fetchedAt": "2025-12-12T10:56:34.141Z",
   "data": [
     {
       "rank": "1",
-      "username": "onotaizee",
-      "score": "255.00"
+      "username": "dawolowo06",
+      "score": "296.67"
     },
     {
       "rank": "2",
       "username": "ukemeedet2207",
-      "score": "250.00"
+      "score": "275.00"
     },
     {
       "rank": "3",
-      "username": "etiniER",
-      "score": "220.00"
+      "username": "onotaizee",
+      "score": "255.00"
     },
     {
       "rank": "4",
-      "username": "dawolowo06",
-      "score": "206.67"
+      "username": "etiniER",
+      "score": "220.00"
     },
     {
       "rank": "5",
@@ -53,42 +53,52 @@
     },
     {
       "rank": "11",
+      "username": "danonymous_coder",
+      "score": "100.00"
+    },
+    {
+      "rank": "12",
+      "username": "bjsoftskiller",
+      "score": "80.00"
+    },
+    {
+      "rank": "13",
       "username": "ighalogenesis201",
       "score": "60.00"
     },
     {
-      "rank": "12",
+      "rank": "14",
       "username": "samuelemeka_guru",
       "score": "50.00"
     },
     {
-      "rank": "13",
+      "rank": "15",
+      "username": "ayoni02",
+      "score": "50.00"
+    },
+    {
+      "rank": "16",
       "username": "_inertia_",
       "score": "10.00"
     },
     {
-      "rank": "14",
+      "rank": "17",
+      "username": "akinmadeafolaya1",
+      "score": "10.00"
+    },
+    {
+      "rank": "18",
       "username": "sirinnoson7777",
       "score": "0.00"
     },
     {
-      "rank": "15",
+      "rank": "19",
       "username": "mubarakjimoh23",
       "score": "0.00"
     },
     {
-      "rank": "16",
+      "rank": "20",
       "username": "oladipoelijah77",
-      "score": "0.00"
-    },
-    {
-      "rank": "17",
-      "username": "akinmadeafolaya1",
-      "score": "0.00"
-    },
-    {
-      "rank": "18",
-      "username": "ayoni02",
       "score": "0.00"
     }
   ]
