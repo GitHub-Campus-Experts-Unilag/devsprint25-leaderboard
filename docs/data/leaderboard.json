@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2025-12-12T09:00:33.376Z",
+  "fetchedAt": "2025-12-12T09:06:51.329Z",
   "data": [
     {
       "rank": "1",
@@ -13,16 +13,21 @@
     },
     {
       "rank": "3",
+      "username": "OlumideFactorial",
+      "score": "50.00"
+    },
+    {
+      "rank": "4",
       "username": "etiniER",
       "score": "0.00"
     },
     {
-      "rank": "4",
+      "rank": "5",
       "username": "dawolowo06",
       "score": "0.00"
     },
     {
-      "rank": "5",
+      "rank": "6",
       "username": "adeolafadare8",
       "score": "0.00"
     }
