@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2025-12-12T09:20:26.539Z",
+  "fetchedAt": "2025-12-12T09:27:25.773Z",
   "data": [
     {
       "rank": "1",
       "username": "onotaizee",
-      "score": "200.00"
+      "score": "225.00"
     },
     {
       "rank": "2",
@@ -28,22 +28,32 @@
     },
     {
       "rank": "6",
+      "username": "isholausaamah",
+      "score": "50.00"
+    },
+    {
+      "rank": "7",
+      "username": "0layiw0la",
+      "score": "50.00"
+    },
+    {
+      "rank": "8",
       "username": "Aphrotee",
       "score": "10.00"
     },
     {
-      "rank": "7",
+      "rank": "9",
       "username": "dawolowo06",
       "score": "6.67"
     },
     {
-      "rank": "8",
-      "username": "oladipoelijah77",
+      "rank": "10",
+      "username": "mubarakjimoh23",
       "score": "0.00"
     },
     {
-      "rank": "9",
-      "username": "0layiw0la",
+      "rank": "11",
+      "username": "oladipoelijah77",
       "score": "0.00"
     }
   ]
