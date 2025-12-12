@@ -1,11 +1,6 @@
 {
-  "fetchedAt": "2025-12-12T10:16:49.586Z",
+  "fetchedAt": "2025-12-12T10:41:01.968Z",
   "data": [
-    {
-      "rank": "1",
-      "username": "isholausaamah",
-      "score": "285.00"
-    },
     {
       "rank": "2",
       "username": "onotaizee",
@@ -14,47 +9,47 @@
     {
       "rank": "3",
       "username": "ukemeedet2207",
-      "score": "235.00"
+      "score": "250.00"
     },
     {
       "rank": "4",
-      "username": "etiniER",
-      "score": "200.00"
+      "username": "akanmuibro",
+      "score": "244.44"
     },
     {
       "rank": "5",
-      "username": "OlumideFactorial",
-      "score": "175.00"
+      "username": "etiniER",
+      "score": "210.00"
     },
     {
       "rank": "6",
+      "username": "dawolowo06",
+      "score": "206.67"
+    },
+    {
+      "rank": "7",
+      "username": "OlumideFactorial",
+      "score": "205.00"
+    },
+    {
+      "rank": "8",
       "username": "0layiw0la",
       "score": "165.00"
     },
     {
-      "rank": "7",
-      "username": "dawolowo06",
-      "score": "156.67"
+      "rank": "9",
+      "username": "kingtolu0224",
+      "score": "146.67"
     },
     {
-      "rank": "8",
+      "rank": "10",
       "username": "adeolafadare8",
       "score": "115.00"
     },
     {
-      "rank": "9",
+      "rank": "11",
       "username": "Aphrotee",
       "score": "110.00"
-    },
-    {
-      "rank": "10",
-      "username": "akanmuibro",
-      "score": "100.00"
-    },
-    {
-      "rank": "11",
-      "username": "kingtolu0224",
-      "score": "50.00"
     },
     {
       "rank": "12",
@@ -63,27 +58,37 @@
     },
     {
       "rank": "13",
+      "username": "samuelbamgbola",
+      "score": "50.00"
+    },
+    {
+      "rank": "14",
       "username": "_inertia_",
       "score": "10.00"
     },
     {
-      "rank": "14",
+      "rank": "15",
       "username": "sirinnoson7777",
       "score": "0.00"
     },
     {
-      "rank": "15",
+      "rank": "16",
       "username": "mubarakjimoh23",
       "score": "0.00"
     },
     {
-      "rank": "16",
+      "rank": "17",
       "username": "oladipoelijah77",
       "score": "0.00"
     },
     {
-      "rank": "17",
+      "rank": "18",
       "username": "akinmadeafolaya1",
+      "score": "0.00"
+    },
+    {
+      "rank": "19",
+      "username": "ayoni02",
       "score": "0.00"
     }
   ]
