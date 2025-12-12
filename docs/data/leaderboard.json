@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2025-12-12T11:17:16.531Z",
+  "fetchedAt": "2025-12-12T11:28:09.054Z",
   "data": [
     {
       "rank": "1",
@@ -18,72 +18,72 @@
     },
     {
       "rank": "4",
+      "username": "adeolafadare8",
+      "score": "255.00"
+    },
+    {
+      "rank": "5",
       "username": "etiniER",
       "score": "230.00"
     },
     {
-      "rank": "5",
-      "username": "adeolafadare8",
-      "score": "215.00"
-    },
-    {
       "rank": "6",
-      "username": "bjsoftskiller",
-      "score": "215.00"
-    },
-    {
-      "rank": "7",
       "username": "akinmadeafolaya1",
       "score": "210.00"
     },
     {
-      "rank": "8",
+      "rank": "7",
       "username": "0layiw0la",
       "score": "210.00"
     },
     {
-      "rank": "9",
+      "rank": "8",
       "username": "OlumideFactorial",
       "score": "205.00"
     },
     {
-      "rank": "10",
+      "rank": "9",
       "username": "samuelbamgbola",
       "score": "150.00"
     },
     {
-      "rank": "11",
+      "rank": "10",
       "username": "kingtolu0224",
       "score": "146.67"
     },
     {
-      "rank": "12",
+      "rank": "11",
       "username": "Aphrotee",
       "score": "140.00"
     },
     {
-      "rank": "13",
+      "rank": "12",
       "username": "kd9823987",
       "score": "100.00"
     },
     {
-      "rank": "14",
+      "rank": "13",
       "username": "oyekalehabeeb26",
       "score": "100.00"
     },
     {
-      "rank": "15",
+      "rank": "14",
       "username": "ighalogenesis201",
       "score": "60.00"
     },
     {
-      "rank": "16",
+      "rank": "15",
       "username": "ayoni02",
       "score": "60.00"
     },
     {
-      "rank": "17",
+      "rank": "16",
       "username": "samuelemeka_guru",
+      "score": "50.00"
+    },
+    {
+      "rank": "17",
+      "username": "elias_ifenaike",
       "score": "50.00"
     },
     {
@@ -109,11 +109,6 @@
     {
       "rank": "22",
       "username": "oladipoelijah77",
-      "score": "0.00"
-    },
-    {
-      "rank": "23",
-      "username": "elias_ifenaike",
       "score": "0.00"
     }
   ]
